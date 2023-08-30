@@ -1,0 +1,28 @@
+{
+    "lang" : {
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "name": "Olha Vlasova",
+        "position": "Frontend Developer",
+        "place": "Aspach, Austria",
+        "aboutText": "I have been working as a frontend developer for the last threeyears. Have experience with java script, html, css, sass/less, json,pixi.js, pixi-spine, Figma, Photoshop, I am confident with git. I haveexperience working with self-written game engines. I speak Englishat the level of communication.",
+        "education": "Education",
+        "languages": "Languages",
+        "education_step1": "IT STEP Computer Academy",
+        "education_step1_desc": "Specialist, Front-End Developer",
+        "education_step2": "National Technical University of Agriculture named afterPetro Vasilenka",
+        "education_step2_desc": "Magister, Energy and computer technologies",
+        "education_place": "Kharkiv, Ukraine",
+        "en": "English",
+        "de": "German",
+        "ua": "Ukrainian",
+        "ru": "Russian",
+        "": "",
+        "": "",
+        "": "",
+        "": ""
+    }
+}

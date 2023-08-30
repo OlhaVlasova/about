@@ -1,0 +1,61 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 0;
+    width: 100%;
+    // background: linear-gradient( rgba(#101616, 1),rgba(#101616, 0.4), rgba(#101616, 0) );
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            text-transform: uppercase;
+            font-size: var(--nav-font-size);
+            font-weight: 600;
+            padding: 15px;
+            transition: all .5s;
+            &:hover {
+                @include theme-second-colors($dark-theme: true);
+            }
+        }
+    }
+
+}
+.checked {
+    position: absolute;
+    top: 32px;
+    right: 50px;
+    &-theme {
+        display: none;
+    }
+    &-lang {
+        select {
+            appearance: none;
+            border: 0;
+            outline: 0;
+            font: inherit;
+            width: 60px;
+            height: 100%;
+            padding: 7px;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: var(--nav-font-size);
+            font-weight: 600;
+            option {
+                color: #fff;
+                background-color: transparent;
+              }
+              /* Remove focus outline */
+              &:focus {
+                outline: none;
+              }
+              /* Remove IE arrow */
+              &::-ms-expand {
+                display: none;
+              }
+        }
+    }
+    
+    
+}

@@ -4,20 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,900;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <section id="home" class="home">
+        <div id="header" class="header">
+            <div class="wrap">
+                <nav>
+                    <a href="#" data-lang="about"></a>
+                    <a href="#" data-lang="skills"></a>
+                    <a href="#" data-lang="experience"></a>
+                    <a href="#" data-lang="portfolio"></a>
+                    <a href="#" data-lang="contact"></a>
+                </nav>
+            </div>
+            <div class="checked">
+                <div class="checked-theme">
+                    <input type="radio" id="light" name="fav_language" value="light">
+                    <label for="light">Light</label>
+                    <input type="radio" id="dark" name="fav_language" value="dark">
+                    <label for="dark">Dark</label>
+                </div>
+                <div class="checked-lang">
+                    <select name="cars" id="cars">
+                        <option value="en">EN</option>
+                        <option value="ua">UA</option>
+                        <option value="de">DE</option>
+                    </select>
+                </div>
+    
+            </div>
+    
+        </div>
 
-    <div class="links">
-        <a href="https://olhavlasova.github.io/Claymore/">Claymore</a>
-        <a href="https://olhavlasova.github.io/FoodyLove/">FoodyLove</a>
-        <a href="https://olhavlasova.github.io/Weather/">Weather</a>
-        <a href="https://olhavlasova.github.io/ThermoBrett/">ThermoBrett</a>
-        <a href="https://olhavlasova.github.io/Lion/">Lion</a>
-        <a href="https://olhavlasova.github.io/BonVivat/">BonVivat</a>
-    </div>
+
+        <div class="wrap">
+            <div class="home-main">
+                <h1 class="home-title" data-lang="name"></h1>
+                <h2 class="home-position" data-lang="position"></h2>
+                <a href="https://goo.gl/maps/eU8KJ5akK92cyDhKA" class="home-place" target="_blank">
+                    <img src="resources/svg/place.svg">
+                    <div data-lang="place"></div>
+                </a>
+            </div>
+
+            <div class="home-about">
+                <h3 data-lang="about"></h3>
+                <p>I have been working as a frontend developer for the last threeyears. 
+                    Have experience with java script, html, css, sass/less, json,pixi.js, 
+                    pixi-spine, Figma, Photoshop, I am confident with git. I haveexperience 
+                    working with self-written game engines. I speak Englishat the level of communication.
+                </p>
+
+            </div>
+
+            <div class="education">
+                <h3 data-lang="education"></h3>
+                <div class="education-box">
+                    <div class="education-item">
+                        <h4 data-lang="education_step1"></h4>
+                        <div class="education--desc" data-lang="education_step1_desc"></div>
+                        <div class="education--date">2018-2019</div>
+                        <div class="education--place" data-lang="education_place"></div>
+                    </div>
+                </div>
+
+                <div class="education-box">
+                    <div class="education-item">
+                        <h4 data-lang="education_step2"></h4>
+                        <div class="education--desc" data-lang="education_step2_desc"></div>
+                        <div class="education--date">2017-2013</div>
+                        <div class="education--place" data-lang="education_place"></div>
+                    </div>
+                </div>
+
+                <div class="education-box">
+                    <div class="education-item">
+                        <h4 class="education--lang">
+                            <span data-lang="en"></span>
+                            <span class="education--lang-level">(B2)</span>
+                        </h4>
+                        <div class="education--desc"></div>
+                    </div>
+                </div>
+
+                <div class="education-box">
+                    <div class="education-item">
+                        <h4 class="education--lang">
+                            <span data-lang="de"></span>
+                            <span class="education--lang-level">(B1)</span>
+                        </h4>
+                        <div class="education--desc"></div>
+                    </div>
+                </div>
+
+                <div class="education-box">
+                    <div class="education-item">
+                        <h4 class="education--lang">
+                            <span data-lang="ua"></span>
+                            <span class="education--lang-level">(Native)</span>
+                        </h4>
+                        <div class="education--desc"></div>
+                    </div>
+                </div>
+
+                <div class="education-box">
+                    <div class="education-item">
+                        <h4 class="education--lang">
+                            <span data-lang="ru"></span>
+                            <span class="education--lang-level">(Native)</span>
+                        </h4>
+                        <div class="education--desc"></div>
+                    </div>
+                </div>
+
+            </div>
 
 
+        </div>
+
+    </section>
+
+    
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

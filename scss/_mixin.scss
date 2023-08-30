@@ -1,0 +1,15 @@
+@mixin theme-colors($dark-theme: true) {
+    @if $dark-theme {
+      color: $dark-text;
+    } @else {
+      color: $light-text;
+    }
+}
+
+@mixin theme-second-colors($dark-theme: true) {
+    @if $dark-theme {
+      color: $dark-second-color;
+    } @else {
+      color: $light-second-color;
+    }
+}

@@ -1,13 +1,32 @@
 @import 'reset';
 @import 'vars';
-@import 'header';
-@import 'footer';
+@import 'mixin';
 
-.links {
-    padding: 30px;
-    a {
-        margin: 10px;
-        font-size: 24px;
-        color: #000;
-    }
+body, p, a, select {
+    @include theme-colors($dark-theme: true);
+    font-family: $timesNewRomanFont;
 }
+
+p {
+    font-size: var(--main-font-size);
+}
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: var(--font-size-h2);
+}
+h3 {
+    text-transform: uppercase;
+    font-size: var(--font-size-h3);
+}
+.wrap {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+@import 'header';
+@import 'home';
+@import 'footer';

@@ -1,0 +1,15 @@
+{
+    "lang" : {
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "name": "Olha Vlasova",
+        "position": "Frontend Developer",
+        "place": "Aspach, Austria",
+        "aboutText": "I have been working as a frontend developer for the last threeyears. Have experience with java script, html, css, sass/less, json,pixi.js, pixi-spine, Figma, Photoshop, I am confident with git. I haveexperience working with self-written game engines. I speak Englishat the level of communication.",
+        "education": "Education",
+        "languages": "Languages"
+    }
+}
