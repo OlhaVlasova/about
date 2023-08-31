@@ -1,9 +1,14 @@
 @import 'reset';
 @import 'vars';
 @import 'mixin';
+@import '_kayframes';
+
+body {
+    @include theme-bg($dark-theme);
+}
 
 body, p, a, select {
-    @include theme-colors($dark-theme: true);
+    @include theme-colors($dark-theme);
     font-family: $timesNewRomanFont;
 }
 
@@ -22,11 +27,24 @@ h3 {
     text-transform: uppercase;
     font-size: var(--font-size-h3);
 }
+h4 {
+    font-size: var(--font-size-h4);
+    font-weight: 600;
+}
 .wrap {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
 }
+::-webkit-scrollbar {
+    width: 0;
+}
+::-webkit-scrollbar-thumb {
+    width: 0;
+}
+
 @import 'header';
 @import 'home';
+
+
 @import 'footer';

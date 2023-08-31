@@ -1,12 +1,16 @@
 // font
 $timesNewRomanFont: 'Montserrat', sans-serif;
+$dark-theme: true;
 
 // colors
 $dark-text: #fff;
 $light-text: #000;
 
 $dark-second-color: #5CFFB1;
-$light-second-color: #5CFFB1;
+$light-second-color: red;
+
+$dark-background: #101616;
+$light-background: #fcdada;
 
 
 
@@ -17,12 +21,11 @@ $light-second-color: #5CFFB1;
     --font-size-h3: 32px;
     --font-size-h4: 20px;
 
+    --skills-font-size: 24px;
+
     --main-font-size: 18px;
     
     
     
     
-    
-    --mobile-menu-size: 85vw;
-    --mobile-margin-size: -85vw;
 }

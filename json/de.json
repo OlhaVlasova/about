@@ -1,15 +1,28 @@
 {
     "lang" : {
-        "about": "About",
-        "skills": "Skills",
-        "experience": "Experience",
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "experience": "Erfahrung",
         "portfolio": "Portfolio",
-        "contact": "Contact",
+        "contact": "Kontakt",
         "name": "Olha Vlasova",
-        "position": "Frontend Developer",
-        "place": "Aspach, Austria",
-        "aboutText": "I have been working as a frontend developer for the last threeyears. Have experience with java script, html, css, sass/less, json,pixi.js, pixi-spine, Figma, Photoshop, I am confident with git. I haveexperience working with self-written game engines. I speak Englishat the level of communication.",
-        "education": "Education",
-        "languages": "Languages"
+        "position": "Frontend Entwicklerin",
+        "place": "Aspach, Österreich",
+        "aboutText": "Ich arbeite seit drei Jahren als Frontend-Entwickler. Habe Erfahrung mit Javascript, HTML, CSS, Sass/less, Json, Pixi.js, Pixi-Spine, Figma, Photoshop, ich bin sicher mit Git. Ich habe Erfahrung in der Arbeit mit selbst geschriebenen Spiel-Engines. Ich spreche Englisch auf der Kommunikationsebene.",
+        "education": "Ausbildung",
+        "languages": "Sprachen",
+        "education_step1": "IT STEP Computerakademie",
+        "education_step1_desc": "Spezialist, Front-End-Entwickler",
+        "education_step2": "Nationale Technische Universität für Landwirtschaft, benannt nachPetro Vasilenka",
+        "education_step2_desc": "Magister, Energie- und Computertechnologien",
+        "education_place": "Charkiw, Ukraine",
+        "en": "English",
+        "de": "German",
+        "ua": "Ukrainian",
+        "ru": "Russian",
+        "mySkils": "Meine Fähigkeiten",
+        "": "",
+        "": "",
+        "": ""
     }
 }

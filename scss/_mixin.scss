@@ -1,4 +1,5 @@
-@mixin theme-colors($dark-theme: true) {
+
+@mixin theme-colors($dark-theme) {
     @if $dark-theme {
       color: $dark-text;
     } @else {
@@ -6,10 +7,36 @@
     }
 }
 
-@mixin theme-second-colors($dark-theme: true) {
+@mixin theme-second-colors($dark-theme) {
     @if $dark-theme {
       color: $dark-second-color;
     } @else {
       color: $light-second-color;
     }
 }
+
+@mixin theme-bg($dark-theme) {
+  @if $dark-theme {
+    background-color: $dark-background;
+  } @else {
+    background-color: $light-background;
+  }
+}
+
+@mixin theme-bg_second($dark-theme) {
+  @if $dark-theme {
+    background-color: $dark-second-color;
+  } @else {
+    background-color: $light-second-color;
+  }
+}
+
+@mixin theme-bg_liner($dark-theme, $link) {
+  @if $dark-theme {
+    background: linear-gradient( rgba($dark-background, 0),rgba($dark-background, 0),rgba($dark-background, 0.5), rgba($dark-background, 1) ),  url($link);
+  } @else {
+    background: linear-gradient( rgba($light-background, 0),rgba($light-background, 0),rgba($light-background, 0.5), rgba($light-background, 1) ),  url($link);
+  }
+}
+
+

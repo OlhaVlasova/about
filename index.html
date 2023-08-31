@@ -10,10 +10,28 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="scrollBar">
+        <span></span>
+      </div>
+
     <section id="home" class="home">
         <div id="header" class="header">
+            <div class="burger-icon" id="burger">
+                <span class="burger-icon--line"></span>
+                <span class="burger-icon--line"></span>
+                <span class="burger-icon--line"></span>
+            </div>
+
             <div class="wrap">
-                <nav>
+                <nav id="nav">
+                    <a href="#" data-lang="about"></a>
+                    <a href="#" data-lang="skills"></a>
+                    <a href="#" data-lang="experience"></a>
+                    <a href="#" data-lang="portfolio"></a>
+                    <a href="#" data-lang="contact"></a>
+                </nav>
+
+                <nav id="mobile-nav">
                     <a href="#" data-lang="about"></a>
                     <a href="#" data-lang="skills"></a>
                     <a href="#" data-lang="experience"></a>
@@ -28,18 +46,31 @@
                     <input type="radio" id="dark" name="fav_language" value="dark">
                     <label for="dark">Dark</label>
                 </div>
+
                 <div class="checked-lang">
-                    <select name="cars" id="cars">
-                        <option value="en">EN</option>
+                    <div name="lang" id="lang">
+                        <div class="checked-lang--main" id="checked-lang--main" value="en">EN</div>
+                        <div class="checked-lang--box">
+                            <div class="checked-lang--key" id="en" value="en">EN</div>
+                            <div class="checked-lang--key" id="ua" value="ua">UA</div>
+                            <div class="checked-lang--key" id="de" value="de">DE</div>
+                        </div>
+                        <div class="checked-lang--icon">
+                            <img src="resources/svg/select.svg" alt="">
+                        </div>
+                        
+                    </div>
+                    <!-- <select name="cars" id="cars">
+                        <option selected value="en">EN</option>
                         <option value="ua">UA</option>
                         <option value="de">DE</option>
-                    </select>
+                    </select> -->
+                    
                 </div>
     
             </div>
     
         </div>
-
 
         <div class="wrap">
             <div class="home-main">
@@ -53,7 +84,7 @@
 
             <div class="home-about">
                 <h3 data-lang="about"></h3>
-                <p>I have been working as a frontend developer for the last threeyears. 
+                <p data-lang="aboutText">I have been working as a frontend developer for the last threeyears. 
                     Have experience with java script, html, css, sass/less, json,pixi.js, 
                     pixi-spine, Figma, Photoshop, I am confident with git. I haveexperience 
                     working with self-written game engines. I speak Englishat the level of communication.
@@ -64,55 +95,45 @@
             <div class="education">
                 <h3 data-lang="education"></h3>
                 <div class="education-box">
-                    <div class="education-item">
+                    <div class="education-item education-item--1">
                         <h4 data-lang="education_step1"></h4>
                         <div class="education--desc" data-lang="education_step1_desc"></div>
                         <div class="education--date">2018-2019</div>
                         <div class="education--place" data-lang="education_place"></div>
                     </div>
-                </div>
 
-                <div class="education-box">
-                    <div class="education-item">
+                    <div class="education-item education-item--2">
                         <h4 data-lang="education_step2"></h4>
                         <div class="education--desc" data-lang="education_step2_desc"></div>
                         <div class="education--date">2017-2013</div>
                         <div class="education--place" data-lang="education_place"></div>
                     </div>
-                </div>
 
-                <div class="education-box">
-                    <div class="education-item">
+                    <div class="education-item education-item--3">
                         <h4 class="education--lang">
                             <span data-lang="en"></span>
                             <span class="education--lang-level">(B2)</span>
                         </h4>
                         <div class="education--desc"></div>
                     </div>
-                </div>
 
-                <div class="education-box">
-                    <div class="education-item">
+                    <div class="education-item education-item--4">
                         <h4 class="education--lang">
                             <span data-lang="de"></span>
                             <span class="education--lang-level">(B1)</span>
                         </h4>
                         <div class="education--desc"></div>
                     </div>
-                </div>
 
-                <div class="education-box">
-                    <div class="education-item">
+                    <div class="education-item education-item--5">
                         <h4 class="education--lang">
                             <span data-lang="ua"></span>
                             <span class="education--lang-level">(Native)</span>
                         </h4>
                         <div class="education--desc"></div>
                     </div>
-                </div>
 
-                <div class="education-box">
-                    <div class="education-item">
+                    <div class="education-item education-item--6">
                         <h4 class="education--lang">
                             <span data-lang="ru"></span>
                             <span class="education--lang-level">(Native)</span>
@@ -122,8 +143,44 @@
                 </div>
 
             </div>
+        </div>
 
+    </section>
 
+    <section id="mySkills" class="mySkills">
+        <div class="wrap">
+            <div>
+                <h3 data-lang="mySkils"></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. m hic aliquam, 
+                    exercitationem voluptatem inventore incidunt blanditiis ratione harum ab 
+                    animi magni est voluptates soluta expedita velit?</p>
+            </div>
+
+            <div class="mySkills-box">
+                <div>
+                    <div class="mySkills-box--item">JavaScript</div>
+                    <div class="mySkills-box--item">Pixi.js</div>
+                    <div class="mySkills-box--item">JSON</div>
+                </div>
+
+                <div>
+                    <div class="mySkills-box--item">HTML 5</div>
+                    <div class="mySkills-box--item">CSS 3</div>
+                    <div class="mySkills-box--item">Bootstrap</div>
+                    <div class="mySkills-box--item">SCSS</div>
+                </div>
+
+                <div>
+                    <div class="mySkills-box--item">Photoshop</div>
+                    <div class="mySkills-box--item">Figma</div>
+                </div>
+
+                <div>
+                    <div class="mySkills-box--item">Git</div>
+                </div>
+
+            </div>
+            
         </div>
 
     </section>
