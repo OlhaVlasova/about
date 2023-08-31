@@ -4,20 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,900;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="scrollBar">
+        <span></span>
+      </div>
 
-    <div class="links">
-        <a href="https://olhavlasova.github.io/Claymore/">Claymore</a>
-        <a href="https://olhavlasova.github.io/FoodyLove/">FoodyLove</a>
-        <a href="https://olhavlasova.github.io/Weather/">Weather</a>
-        <a href="https://olhavlasova.github.io/ThermoBrett/">ThermoBrett</a>
-        <a href="https://olhavlasova.github.io/Lion/">Lion</a>
-        <a href="https://olhavlasova.github.io/BonVivat/">BonVivat</a>
-    </div>
+    <section id="home" class="home">
+        <div id="header" class="header">
+            <div class="burger-icon" id="burger">
+                <span class="burger-icon--line"></span>
+                <span class="burger-icon--line"></span>
+                <span class="burger-icon--line"></span>
+            </div>
+
+            <div class="wrap">
+                <nav id="nav">
+                    <a href="#home-about" data-lang="about"></a>
+                    <a href="#mySkills" data-lang="skills"></a>
+                    <!-- <a href="#" data-lang="experience"></a> -->
+                    <a href="#portfolio" data-lang="portfolio"></a>
+                    <a href="#footer" data-lang="contact"></a>
+                </nav>
+
+                <nav id="mobile-nav">
+                    <a href="#home-about" data-lang="about"></a>
+                    <a href="#mySkills" data-lang="skills"></a>
+                    <!-- <a href="#" data-lang="experience"></a> -->
+                    <a href="#portfolio" data-lang="portfolio"></a>
+                    <a href="#footer" data-lang="contact"></a>
+                </nav>
+            </div>
+            <div class="checked">
+                <div class="checked-theme">
+                    <input type="radio" id="light" name="fav_language" value="light">
+                    <label for="light">Light</label>
+                    <input type="radio" id="dark" name="fav_language" value="dark">
+                    <label for="dark">Dark</label>
+                </div>
+
+                <div class="checked-lang">
+                    <div name="lang" id="lang">
+                        <div class="checked-lang--main" id="checked-lang--main" value="en">EN</div>
+                        <div class="checked-lang--box">
+                            <div class="checked-lang--key" id="en" value="en">EN</div>
+                            <div class="checked-lang--key" id="ua" value="ua">UA</div>
+                            <div class="checked-lang--key" id="de" value="de">DE</div>
+                        </div>
+                        <div class="checked-lang--icon">
+                            <img src="resources/svg/select.svg" alt="">
+                        </div>
+                        
+                    </div>
+                    <!-- <select name="cars" id="cars">
+                        <option selected value="en">EN</option>
+                        <option value="ua">UA</option>
+                        <option value="de">DE</option>
+                    </select> -->
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+
+        <div class="wrap">
+            <div class="home-main">
+                <h1 class="home-title" data-lang="name"></h1>
+                <h2 class="home-position" data-lang="position"></h2>
+                <a href="https://goo.gl/maps/eU8KJ5akK92cyDhKA" class="home-place" target="_blank">
+                    <img src="resources/svg/place.svg">
+                    <div data-lang="place"></div>
+                </a>
+            </div>
+
+            <div id="home-about" class="home-about">
+                <h3 data-lang="about"></h3>
+                <p data-lang="aboutText">I have been working as a frontend developer for the last threeyears. 
+                    Have experience with java script, html, css, sass/less, json,pixi.js, 
+                    pixi-spine, Figma, Photoshop, I am confident with git. I haveexperience 
+                    working with self-written game engines. I speak Englishat the level of communication.
+                </p>
+
+            </div>
+
+            <div class="education">
+                <h3 data-lang="education"></h3>
+                <div class="education-box">
+                    <div class="education-item education-item--1">
+                        <h4 data-lang="education_step1"></h4>
+                        <div class="education--desc" data-lang="education_step1_desc"></div>
+                        <div class="education--date">2018-2019</div>
+                        <div class="education--place" data-lang="education_place"></div>
+                    </div>
+
+                    <div class="education-item education-item--2">
+                        <h4 data-lang="education_step2"></h4>
+                        <div class="education--desc" data-lang="education_step2_desc"></div>
+                        <div class="education--date">2017-2013</div>
+                        <div class="education--place" data-lang="education_place"></div>
+                    </div>
+
+                    <div class="education-item education-item--3">
+                        <h4 class="education--lang">
+                            <span data-lang="en"></span>
+                            <span class="education--lang-level">(B2)</span>
+                        </h4>
+                        <div class="education--desc"></div>
+                    </div>
+
+                    <div class="education-item education-item--4">
+                        <h4 class="education--lang">
+                            <span data-lang="de"></span>
+                            <span class="education--lang-level">(B1)</span>
+                        </h4>
+                        <div class="education--desc"></div>
+                    </div>
+
+                    <div class="education-item education-item--5">
+                        <h4 class="education--lang">
+                            <span data-lang="ua"></span>
+                            <span class="education--lang-level">(Native)</span>
+                        </h4>
+                        <div class="education--desc"></div>
+                    </div>
+
+                    <div class="education-item education-item--6">
+                        <h4 class="education--lang">
+                            <span data-lang="ru"></span>
+                            <span class="education--lang-level">(Native)</span>
+                        </h4>
+                        <div class="education--desc"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="mySkills" class="mySkills">
+        <div class="wrap">
+            <div>
+                <h3 data-lang="mySkils"></h3>
+                <p data-lang="mySkils-text"></p>
+            </div>
+
+            <div class="mySkills-box">
+                <div>
+                    <div class="mySkills-box--item">JavaScript</div>
+                    <div class="mySkills-box--item">Pixi.js</div>
+                    <div class="mySkills-box--item">JSON</div>
+                </div>
+
+                <div>
+                    <div class="mySkills-box--item">HTML 5</div>
+                    <div class="mySkills-box--item">CSS 3</div>
+                    <div class="mySkills-box--item">Bootstrap</div>
+                    <div class="mySkills-box--item">SCSS</div>
+                </div>
+
+                <div>
+                    <div class="mySkills-box--item">Photoshop</div>
+                    <div class="mySkills-box--item">Figma</div>
+                </div>
+
+                <div>
+                    <div class="mySkills-box--item">Git</div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="wrap">
+            <h3 data-lang="portfolio"></h3>
+            <div class="portfolio-box">
+                <!-- Claymore -->
+                <div class="portfolio-item">
+                    <h4 class="portfolio-item--title">Claymore</h4>
+                    <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git, Adaptivity</div>
+                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/Claymore/"><img src="resources/svg/link.svg" alt=""></a>
+                </div>
+
+                <!-- FoodyLove -->
+                <div class="portfolio-item">
+                    <h4 class="portfolio-item--title">FoodyLove</h4>
+                    <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git, Adaptivity</div>
+                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/FoodyLove/"><img src="resources/svg/link.svg" alt=""></a>
+                </div>
+
+                <!-- ThermoBrett -->
+                <div class="portfolio-item">
+                    <h4 class="portfolio-item--title">ThermoBrett</h4>
+                    <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git, Adaptivity</div>
+                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/ThermoBrett/"><img src="resources/svg/link.svg" alt=""></a>
+                </div>
+
+                 <!-- Weather -->
+                 <div class="portfolio-item">
+                    <h4 class="portfolio-item--title">Weather</h4>
+                    <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git</div>
+                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/Weather/"><img src="resources/svg/link.svg" alt=""></a>
+                </div>
+
+                <!-- Lion -->
+                <div class="portfolio-item">
+                    <h4 class="portfolio-item--title">Lion</h4>
+                    <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git</div>
+                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/Lion/"><img src="resources/svg/link.svg" alt=""></a>
+                </div>
+
+                <!-- BonVivat -->
+                <div class="portfolio-item">
+                    <h4 class="portfolio-item--title">BonVivat</h4>
+                    <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git</div>
+                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/BonVivat/"><img src="resources/svg/link.svg" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
+    <footer id="footer">
+        <div class="wrap">
+            <h3 data-lang="contact"></h3>
+            <a target="_blank" href="mailto:work.vlasova@gmail.com">work.vlasova@gmail.com</a>
+            <a target="_blank" href="https://www.linkedin.com/in/olhavlasova?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bf5ztI6XGSxKX%2Fcvgr%2FywcA%3D%3D">linkedin</a>
+            <a target="_blank" href="https://github.com/OlhaVlasova/">github</a>
+        </div>
+
+    </footer>
+
+    
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

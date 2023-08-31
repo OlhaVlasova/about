@@ -1,13 +1,56 @@
 @import 'reset';
 @import 'vars';
-@import 'header';
-@import 'footer';
+@import 'mixin';
+@import '_kayframes';
 
-.links {
-    padding: 30px;
-    a {
-        margin: 10px;
-        font-size: 24px;
-        color: #000;
-    }
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    @include theme-bg($dark-theme);
+}
+
+body, p, a, select {
+    @include theme-colors($dark-theme);
+    font-family: $timesNewRomanFont;
+}
+
+p {
+    font-size: var(--main-font-size);
+}
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: var(--font-size-h2);
+}
+h3 {
+    text-transform: uppercase;
+    font-size: var(--font-size-h3);
+}
+h4 {
+    font-size: var(--font-size-h4);
+    font-weight: 600;
+}
+.wrap {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+::-webkit-scrollbar-thumb {
+    width: 0;
+}
+
+@import 'header';
+@import 'home';
+@import 'portfolio';
+
+
+@import 'footer';
