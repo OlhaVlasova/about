@@ -42,7 +42,7 @@ $(document).ready(function() {
     function checkLanguage() {
 
         let value = $("#checked-lang--main").attr("value");
-        let langUrl = "../json/" + value + ".json";
+        let langUrl = "json/" + value + ".json";
         $("#checked-lang--main").attr("value", value).text(value);
         $("#"+value).addClass("none");
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
         $(".checked-lang--key").on("click", function() {
             value = $(this).attr("value");
-            langUrl = "../json/" + value + ".json";
+            langUrl = "json/" + value + ".json";
             $(".checked-lang--box").removeClass("open");
             $("#checked-lang--main").attr("value", value).text(value);
             $(".checked-lang--key").removeClass("none");
