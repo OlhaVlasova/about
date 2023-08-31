@@ -64,7 +64,7 @@ $(document).ready(function() {
     }
 
     function langParse(url) {
-        var data = (function () {
+        var dataMain = (function () {
             var data = null;
             $.ajax({
                 'async': false,
@@ -79,7 +79,9 @@ $(document).ready(function() {
         })();
 
         function translateLg(data) {
+
             let keysParents = Object.keys(data);
+
             for(let i = 0; i < keysParents.length; i++) {
                 let ind = Object.keys(data[keysParents[i]]);
                 let item = keysParents[i];
@@ -87,18 +89,18 @@ $(document).ready(function() {
             } 
         };
 
-        function enumerationOfProperties (item, ind, data) {  
-            console.log(ind)          
+        function enumerationOfProperties (item, ind, data) {           
             $("[data-" + item + "]").each(function() {
                 let dataTr = $(this).attr("data-" + item);
                 let text = "";
-                ind.forEach(element => {
-                    if(element == dataTr) text = (data[item][dataTr]);
-                });
+                for(let i = 0; i < ind.length; i++) {
+
+                    if(ind[i] == dataTr) text = (data[item][dataTr]);
+                }
                 $(this).html(text);
             });
         }
-        translateLg(data);
+        translateLg(dataMain);
     }
 
 
