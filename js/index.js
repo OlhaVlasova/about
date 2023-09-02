@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     changeMenu();
     checkLanguage();
-    fadeAnim();
+    // fadeAnim();
     
     function changeMenu() {
         $("#mobile-nav").css("display", "none");
