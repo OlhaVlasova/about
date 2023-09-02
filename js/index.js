@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-
+    fadeAnimation();
     changeMenu();
     checkLanguage();
-    // fadeAnim();
+    
     
     function changeMenu() {
         $("#mobile-nav").css("display", "none");
@@ -32,16 +32,13 @@ $(document).ready(function() {
         var documentHeight = $(document).height();
         var windowHeight = $(window).height();
         var scrollPercent = (scrollAmount / (documentHeight - windowHeight)) * 100;
-        var round = Math.round(scrollPercent);
         
         // horizontal scroll bar
         $(".scrollBar").css("width", scrollPercent + "%");
     
     }
 
-
     function checkLanguage() {
-
         let value = $("#checked-lang--main").attr("value");
         let langUrl = "json/" + value + ".json";
         $("#checked-lang--main").attr("value", value).text(value);
@@ -104,51 +101,54 @@ $(document).ready(function() {
         translateLg(dataMain);
     }
 
-    function fadeAnim() {
+    function fadeAnimation() {
+        const screenHeight = window.screen.height;
+        const screenHeightFade = screenHeight*0.8;
+        const heightOutAnim = 30;
 
-        const fadeY = document.querySelectorAll(".fadeY");
-        const fadeXRight = document.querySelectorAll(".fadeXRight");
-        const fadeXLeft = document.querySelectorAll(".fadeXLeft");
-
-        // Intersection Observer function
-        const observer = new IntersectionObserver( 
-            entries => {
-            entries.forEach(entry => {
-                // When an entry enters the viewport, add the class "show":
-                entry.target.classList.toggle("show", entry.isIntersecting)
-
-        
-                // To keep entries from fading out after, unobserve the entry with:
-                // if (entry.isIntersecting) observer.unobserve(entry.target)
-            })
-            }, 
-            {
-            // Threshold of 1 = 100% - entry needed to be in viewport before the class "show" is added
-            threshold: 1,
-            rootMargin: "80px",
-            }        
-        )
-        
-
-        // Intersection Observer to observe the cards
-        fadeY.forEach(card => { 
-            observer.observe(card) 
+        $(window).on("scroll", function() {
+            fadeInAnimation();
+            fadeOutAnimation();
         });
-        fadeXRight.forEach(card => { 
-            observer.observe(card) 
-        });
-        fadeXLeft.forEach(card => { 
-            observer.observe(card) 
-        });
+
+        function fadeInAnimation() {
+            $(".fadeY" ).each(function( index ) {
+                if(window.scrollY >= $(this).offset().top-screenHeightFade) {
+                    $(this).addClass("show");
+                }
+            });
+            $(".fadeXRight" ).each(function( index ) {
+                if(window.scrollY >= $(this).offset().top-screenHeightFade) {
+                    $(this).addClass("show");
+                }
+            });
+            $(".fadeXLeft" ).each(function( index ) {
+                if(window.scrollY >= $(this).offset().top-screenHeightFade) {
+                    $(this).addClass("show");
+                }
+            });
+        }
+        function fadeOutAnimation() {
+            $(".fadeY" ).each(function( index ) {
+                if((window.scrollY >= $(this).offset().top-heightOutAnim) || (window.scrollY < $(this).offset().top-screenHeightFade)) {
+                    $(this).removeClass("show");
+                }
+            
+            });
+            $(".fadeXRight" ).each(function( index ) {
+                if((window.scrollY >= $(this).offset().top-heightOutAnim) || (window.scrollY < $(this).offset().top-screenHeightFade)) {
+                    $(this).removeClass("show");
+                }
+            });
+            $(".fadeXLeft" ).each(function( index ) {
+                if((window.scrollY >= $(this).offset().top-heightOutAnim) || (window.scrollY < $(this).offset().top-screenHeightFade)) {
+                    $(this).removeClass("show");
+                }
+            });
+        }
+
+
     }
-
-
-
-
-
-
-
-
 
 });
 

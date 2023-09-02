@@ -75,6 +75,9 @@
         position: relative;
         font-weight: 700;
         font-size: var(--nav-font-size);
+        &>div {
+            margin-bottom: 5px;
+        }
         &.right {
             text-align: right;
             &::before {

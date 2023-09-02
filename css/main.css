@@ -140,6 +140,42 @@ h4 {
 ::-webkit-scrollbar-thumb {
   width: 0; }
 
+.fadeY {
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  transform: translateY(40px);
+  transition: .5s; }
+  .fadeY.show {
+    opacity: 1;
+    transform: translateY(0); }
+
+.fadeXRight {
+  opacity: 0;
+  -webkit-transform: translateX(150px);
+  -moz-transform: translateX(150px);
+  -o-transform: translateX(150px);
+  -ms-transform: translateX(150px);
+  transform: translateX(150px);
+  transition: .5s; }
+  .fadeXRight.show {
+    opacity: 1;
+    transform: translateX(0); }
+
+.fadeXLeft {
+  opacity: 0;
+  -webkit-transform: translateX(-150px);
+  -moz-transform: translateX(-150px);
+  -o-transform: translateX(-150px);
+  -ms-transform: translateX(-150px);
+  transform: translateX(-150px);
+  transition: .5s; }
+  .fadeXLeft.show {
+    opacity: 1;
+    transform: translateX(0); }
+
 /* horizontal scroll bar */
 .scrollBar {
   position: fixed;
@@ -319,7 +355,7 @@ h4 {
   .home-title {
     margin: 12px 0; }
   .home-position {
-    font-weight: 700;
+    font-weight: 600;
     margin: 20px 0; }
   .home-place {
     font-size: 20px;
@@ -363,7 +399,7 @@ h4 {
   font-size: 14px;
   font-weight: 400;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 10px 0; }
+  padding: 7px 0; }
 .education--date {
   font-weight: 600;
   font-style: italic;
@@ -422,7 +458,7 @@ h4 {
     justify-content: center;
     color: #5CFFB1;
     font-size: var(--skills-font-size);
-    margin-top: 60px; }
+    margin-top: 30px; }
     .mySkills-box > div {
       padding: 30px 30px 30px 30px; }
     .mySkills-box--item {
@@ -516,6 +552,8 @@ h4 {
     position: relative;
     font-weight: 700;
     font-size: var(--nav-font-size); }
+    .experience-time > div {
+      margin-bottom: 5px; }
     .experience-time.right {
       text-align: right; }
       .experience-time.right::before {
