@@ -8,7 +8,7 @@
         "name": "Olha Vlasova",
         "position": "Frontend Developer",
         "place": "Aspach, Austria",
-        "aboutText": "I have been working as a frontend developer for the last threeyears. Have experience with java script, html, css, sass/less, json,pixi.js, pixi-spine, Figma, Photoshop, I am confident with git. I have experience working with self-written game engines. I speak English at the level of communication.",
+        "aboutText": "I have been working as a frontend developer for the last three years. Have experience with java script, html, css, sass, json, pixi.js, pixi-spine, Figma, Photoshop, I am confident with git. I worked with WordPress and Magenta like Content manager. I have experience working with self-written game engines. I speak English at the level of communication.",
         "education": "Education",
         "languages": "Languages",
         "education_step1": "IT STEP Computer Academy",
@@ -21,6 +21,19 @@
         "ua": "Ukrainian",
         "ru": "Russian",
         "mySkils": "My Skills",
-        "mySkils-text": "Ready to learn and add to my list of skills."
+        "mySkils-text": "Ready to learn and add to my list of skills.",
+        "workExperience": "Work Experience",
+        "june": "June",
+        "august": "August",
+        "years": "years",
+        "year": "year",
+        "months": "months",
+        "january": "January",
+        "partTime": "part time",
+        "manager": "Content Manager",
+        "managerTask": "Searching and processing photos, filling the site with content",
+        "july": "July",
+        "february": "February",
+        "april": "April"
     }
 }

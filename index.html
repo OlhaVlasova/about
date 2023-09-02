@@ -14,7 +14,7 @@
         <span></span>
       </div>
 
-    <section id="home" class="home">
+    <section id="home" class="home ">
         <div id="header" class="header">
             <div class="burger-icon" id="burger">
                 <span class="burger-icon--line"></span>
@@ -26,7 +26,7 @@
                 <nav id="nav">
                     <a href="#home-about" data-lang="about"></a>
                     <a href="#mySkills" data-lang="skills"></a>
-                    <!-- <a href="#" data-lang="experience"></a> -->
+                    <a href="#experience" data-lang="experience"></a>
                     <a href="#portfolio" data-lang="portfolio"></a>
                     <a href="#footer" data-lang="contact"></a>
                 </nav>
@@ -34,7 +34,7 @@
                 <nav id="mobile-nav">
                     <a href="#home-about" data-lang="about"></a>
                     <a href="#mySkills" data-lang="skills"></a>
-                    <!-- <a href="#" data-lang="experience"></a> -->
+                    <a href="#experience" data-lang="experience"></a>
                     <a href="#portfolio" data-lang="portfolio"></a>
                     <a href="#footer" data-lang="contact"></a>
                 </nav>
@@ -73,7 +73,7 @@
         </div>
 
         <div class="wrap">
-            <div class="home-main">
+            <div class="home-main fadeY">
                 <h1 class="home-title" data-lang="name"></h1>
                 <h2 class="home-position" data-lang="position"></h2>
                 <a href="https://goo.gl/maps/eU8KJ5akK92cyDhKA" class="home-place" target="_blank">
@@ -82,7 +82,7 @@
                 </a>
             </div>
 
-            <div id="home-about" class="home-about">
+            <div id="home-about" class="home-about fadeY">
                 <h3 data-lang="about"></h3>
                 <p data-lang="aboutText">I have been working as a frontend developer for the last threeyears. 
                     Have experience with java script, html, css, sass/less, json,pixi.js, 
@@ -93,23 +93,36 @@
             </div>
 
             <div class="education">
-                <h3 data-lang="education"></h3>
+                <div class="education-title fadeY">
+                    <h3 data-lang="education"></h3>
+                    <h3 data-lang="languages"></h3>
+                </div>
+                
                 <div class="education-box">
-                    <div class="education-item education-item--1">
+                    <div class="education-item education-item--1 fadeXLeft">
+                        <div class="education--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
                         <h4 data-lang="education_step1"></h4>
                         <div class="education--desc" data-lang="education_step1_desc"></div>
                         <div class="education--date">2018-2019</div>
                         <div class="education--place" data-lang="education_place"></div>
                     </div>
 
-                    <div class="education-item education-item--2">
+                    <div class="education-item education-item--2 fadeXLeft">
+                        <div class="education--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
                         <h4 data-lang="education_step2"></h4>
                         <div class="education--desc" data-lang="education_step2_desc"></div>
                         <div class="education--date">2017-2013</div>
                         <div class="education--place" data-lang="education_place"></div>
                     </div>
 
-                    <div class="education-item education-item--3">
+                    <div class="education-item education-item--3 fadeXRight">
+                        <div class="education--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
                         <h4 class="education--lang">
                             <span data-lang="en"></span>
                             <span class="education--lang-level">(B2)</span>
@@ -117,15 +130,21 @@
                         <div class="education--desc"></div>
                     </div>
 
-                    <div class="education-item education-item--4">
+                    <div class="education-item education-item--4 fadeXRight">
+                        <div class="education--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
                         <h4 class="education--lang">
                             <span data-lang="de"></span>
-                            <span class="education--lang-level">(B1)</span>
+                            <span class="education--lang-level">(A2)</span>
                         </h4>
                         <div class="education--desc"></div>
                     </div>
 
-                    <div class="education-item education-item--5">
+                    <div class="education-item education-item--5 fadeXRight">
+                        <div class="education--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
                         <h4 class="education--lang">
                             <span data-lang="ua"></span>
                             <span class="education--lang-level">(Native)</span>
@@ -133,7 +152,10 @@
                         <div class="education--desc"></div>
                     </div>
 
-                    <div class="education-item education-item--6">
+                    <div class="education-item education-item--6 fadeXRight">
+                        <div class="education--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
                         <h4 class="education--lang">
                             <span data-lang="ru"></span>
                             <span class="education--lang-level">(Native)</span>
@@ -150,31 +172,31 @@
     <section id="mySkills" class="mySkills">
         <div class="wrap">
             <div>
-                <h3 data-lang="mySkils"></h3>
-                <p data-lang="mySkils-text"></p>
+                <h3 data-lang="mySkils" class="fadeY"></h3>
+                <p data-lang="mySkils-text" class="fadeY"></p>
             </div>
 
             <div class="mySkills-box">
-                <div>
-                    <div class="mySkills-box--item">JavaScript</div>
-                    <div class="mySkills-box--item">Pixi.js</div>
-                    <div class="mySkills-box--item">JSON</div>
+                <div class="fade">
+                    <div class="mySkills-box--item fadeXLeft">JavaScript</div>
+                    <div class="mySkills-box--item fadeXLeft">Pixi.js</div>
+                    <div class="mySkills-box--item fadeXLeft">JSON</div>
                 </div>
 
-                <div>
-                    <div class="mySkills-box--item">HTML 5</div>
-                    <div class="mySkills-box--item">CSS 3</div>
-                    <div class="mySkills-box--item">Bootstrap</div>
-                    <div class="mySkills-box--item">SCSS</div>
+                <div class="fade">
+                    <div class="mySkills-box--item fadeXLeft">HTML 5</div>
+                    <div class="mySkills-box--item fadeXLeft">CSS 3</div>
+                    <div class="mySkills-box--item fadeXLeft">Bootstrap</div>
+                    <div class="mySkills-box--item fadeXLeft">SCSS</div>
                 </div>
 
-                <div>
-                    <div class="mySkills-box--item">Photoshop</div>
-                    <div class="mySkills-box--item">Figma</div>
+                <div class="fade">
+                    <div class="mySkills-box--item fadeXRight">Photoshop</div>
+                    <div class="mySkills-box--item fadeXRight">Figma</div>
                 </div>
 
-                <div>
-                    <div class="mySkills-box--item">Git</div>
+                <div class="fade">
+                    <div class="mySkills-box--item fadeXRight">Git</div>
                 </div>
 
             </div>
@@ -183,58 +205,143 @@
 
     </section>
 
+    <section id="experience" class="experience">
+        <div class="wrap">
+            <h3 data-lang="workExperience" class="fadeY"></h3>
+
+            <div class="experience-box">
+                <!-- item 1 -->
+                <div class="experience--item">
+                    <div class="experience-time left fadeXLeft">
+                        <div><span data-lang="june"></span> 2020 - <span data-lang="august"></span> 2023</div>
+                        <div>(3 <span data-lang="years"></span> 3 <span data-lang="months"></span> )</div>
+
+                    </div>
+                    <div class="experience-place right fadeXRight">
+                        <div class="experience-place--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
+                        <h4>Getta Software</h4>
+                        <div class="experience-place--position" data-lang="position"></div>
+                        <div class="experience-place--location" data-lang="education_place"></div>
+                    </div>
+
+                </div>
+
+                <!-- item 2 -->
+                <div class="experience--item fade">
+                    <div class="experience-place left fadeXLeft">
+                        <div class="experience-place--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
+                        <h4>PencilBOOM</h4>
+                        <div class="experience-place--position" data-lang="position"></div>
+                        <div class="experience-place--location" data-lang="education_place"></div>
+                    </div>
+
+                    <div class="experience-time right fadeXRight">
+                        <div><span data-lang="january"></span> 2020 - <span data-lang="april"></span> 2021</div>
+                        <div>(1 <span data-lang="year"></span> 4 <span data-lang="months"></span> )</div>
+                    </div>
+                    
+                </div>
+
+                <!-- item 3 -->
+                <div class="experience--item fade">
+                    <div class="experience-time left fadeXLeft" style="margin-top: 11px;">
+                        <div><span data-lang="april"></span> 2017 - <span data-lang="august"></span> 2019</div>
+                        <div>(2 <span data-lang="years"></span> 5 <span data-lang="months"></span> )</div>
+
+                    </div>
+                    <div class="experience-place right fadeXRight">
+                        <div class="experience-place--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
+                        <h4>Madonna Salon</h4>
+                        <div><span data-lang="manager"></span> (<span data-lang="partTime"></span>)</div>
+                        <div class="experience-place--position" data-lang="managerTask"></div>
+                        <div class="experience-place--location" data-lang="education_place"></div>
+                    </div>
+
+                </div>
+
+                <!-- item 4 -->
+                <div class="experience--item fade">
+                    <div class="experience-place left fadeXLeft">
+                        <div class="experience-place--punkt">
+                            <img src="resources/svg/punkt.svg" alt="">
+                        </div>
+                        <h4>Iodonna Salon</h4>
+                        <div><span data-lang="manager"></span> (<span data-lang="partTime"></span>)</div>
+                        <div class="experience-place--position" data-lang="managerTask"></div>
+                        <div class="experience-place--location" data-lang="education_place"></div>
+                    </div>
+
+                    <div class="experience-time right fadeXRight" style="margin-top: 11px;">
+                        <div><span data-lang="july"></span> 2017 - <span data-lang="february"></span> 2021</div>
+                        <div>(8 <span data-lang="months"></span> )</div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
     <section id="portfolio" class="portfolio">
         <div class="wrap">
-            <h3 data-lang="portfolio"></h3>
+            <h3 data-lang="portfolio" class="fadeY"></h3>
             <div class="portfolio-box">
                 <!-- Claymore -->
-                <div class="portfolio-item">
+                <a target="_blank" href="https://olhavlasova.github.io/Claymore/" class="portfolio-item fadeXLeft">
                     <h4 class="portfolio-item--title">Claymore</h4>
                     <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git, Adaptivity</div>
-                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/Claymore/"><img src="resources/svg/link.svg" alt=""></a>
-                </div>
+                    <div class="portfolio-item--link" ><img src="resources/svg/link.svg" alt=""></div>
+                </a>
 
                 <!-- FoodyLove -->
-                <div class="portfolio-item">
+                <a target="_blank" href="https://olhavlasova.github.io/FoodyLove/" class="portfolio-item fadeXRight">
                     <h4 class="portfolio-item--title">FoodyLove</h4>
                     <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git, Adaptivity</div>
-                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/FoodyLove/"><img src="resources/svg/link.svg" alt=""></a>
-                </div>
+                    <div class="portfolio-item--link" ><img src="resources/svg/link.svg" alt=""></div>
+                </a>
 
                 <!-- ThermoBrett -->
-                <div class="portfolio-item">
+                <a target="_blank" href="https://olhavlasova.github.io/ThermoBrett/" class="portfolio-item fadeXLeft">
                     <h4 class="portfolio-item--title">ThermoBrett</h4>
                     <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git, Adaptivity</div>
-                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/ThermoBrett/"><img src="resources/svg/link.svg" alt=""></a>
-                </div>
+                    <div class="portfolio-item--link" ><img src="resources/svg/link.svg" alt=""></div>
+                </a>
 
                  <!-- Weather -->
-                 <div class="portfolio-item">
+                 <a target="_blank" href="https://olhavlasova.github.io/Weather/" class="portfolio-item fadeXRight">
                     <h4 class="portfolio-item--title">Weather</h4>
                     <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git</div>
-                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/Weather/"><img src="resources/svg/link.svg" alt=""></a>
-                </div>
+                    <div class="portfolio-item--link"><img src="resources/svg/link.svg" alt=""></div>
+                 </a>
 
                 <!-- Lion -->
-                <div class="portfolio-item">
+                <a target="_blank" href="https://olhavlasova.github.io/Lion/" class="portfolio-item fadeXLeft">
                     <h4 class="portfolio-item--title">Lion</h4>
                     <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git</div>
-                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/Lion/"><img src="resources/svg/link.svg" alt=""></a>
-                </div>
+                    <div class="portfolio-item--link"><img src="resources/svg/link.svg" alt=""></div>
+                </a>
 
                 <!-- BonVivat -->
-                <div class="portfolio-item">
+                <a target="_blank" href="https://olhavlasova.github.io/BonVivat/" class="portfolio-item fadeXRight">
                     <h4 class="portfolio-item--title">BonVivat</h4>
                     <div class="portfolio-item--desc">HTML 5, CSS3, JavaScript, Bootstrap, SCSS, Git</div>
-                    <a class="portfolio-item--link" target="_blank" href="https://olhavlasova.github.io/BonVivat/"><img src="resources/svg/link.svg" alt=""></a>
-                </div>
+                    <div class="portfolio-item--link"><img src="resources/svg/link.svg" alt=""></div>
+                </a>
             </div>
 
         </div>
     </section>
 
 
-    <footer id="footer">
+    <footer id="footer" class="fadeY">
         <div class="wrap">
             <h3 data-lang="contact"></h3>
             <a target="_blank" href="mailto:work.vlasova@gmail.com">work.vlasova@gmail.com</a>

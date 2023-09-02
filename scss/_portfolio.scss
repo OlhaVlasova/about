@@ -1,6 +1,5 @@
 .portfolio {
-    padding: 75px 0 80px;
-    background: linear-gradient( rgba(#101616, 1),rgba(#101616, 0.8), rgba(#101616, 1) ),  url('../resources/img/portfolio_bg.png');
+    padding: 120px 0 80px;
     h3 {
         text-align: center;
         margin-bottom: 45px;
@@ -26,6 +25,9 @@
         }
         &--desc {
             font-weight: 600;
+        }
+        &:hover {
+            background: linear-gradient( rgba(#090D0D, .1),rgba(#090D0D, 1), rgba(#090D0D, .1) );
         }
     }
 

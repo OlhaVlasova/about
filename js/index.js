@@ -3,6 +3,7 @@ $(document).ready(function() {
 
     changeMenu();
     checkLanguage();
+    fadeAnim();
     
     function changeMenu() {
         $("#mobile-nav").css("display", "none");
@@ -10,7 +11,7 @@ $(document).ready(function() {
         $(window).on("scroll", function() {
             scrollProgress();
             $(".checked-lang--box").removeClass("open");
-            if(window.scrollY > 25) {
+            if(window.scrollY > 100) {
                 $("#header").addClass("scroll");
             } else {
                 $("#header").removeClass("scroll");
@@ -101,6 +102,44 @@ $(document).ready(function() {
             });
         }
         translateLg(dataMain);
+    }
+
+    function fadeAnim() {
+
+        const fadeY = document.querySelectorAll(".fadeY");
+        const fadeXRight = document.querySelectorAll(".fadeXRight");
+        const fadeXLeft = document.querySelectorAll(".fadeXLeft");
+
+        // Intersection Observer function
+        const observer = new IntersectionObserver( 
+            entries => {
+            entries.forEach(entry => {
+                // When an entry enters the viewport, add the class "show":
+                entry.target.classList.toggle("show", entry.isIntersecting)
+
+        
+                // To keep entries from fading out after, unobserve the entry with:
+                // if (entry.isIntersecting) observer.unobserve(entry.target)
+            })
+            }, 
+            {
+            // Threshold of 1 = 100% - entry needed to be in viewport before the class "show" is added
+            threshold: 1,
+            rootMargin: "80px",
+            }        
+        )
+        
+
+        // Intersection Observer to observe the cards
+        fadeY.forEach(card => { 
+            observer.observe(card) 
+        });
+        fadeXRight.forEach(card => { 
+            observer.observe(card) 
+        });
+        fadeXLeft.forEach(card => { 
+            observer.observe(card) 
+        });
     }
 
 
