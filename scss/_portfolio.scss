@@ -9,6 +9,11 @@
         padding: 20px 50px;
         position: relative;
         margin: 15px 0;
+        &:hover {
+            path {
+                stroke: $dark-second-color;
+            }
+        }
         &--title {
             @include theme-second-colors($dark-theme);
             margin-bottom: 25px;
@@ -26,9 +31,6 @@
         &--desc {
             font-weight: 600;
             font-size: 14px;
-        }
-        &:hover {
-            background: linear-gradient( rgba(#090D0D, .1),rgba(#090D0D, 1), rgba(#090D0D, .1) );
         }
     }
 

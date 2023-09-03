@@ -38,12 +38,12 @@
       }
 }
 .fadeAddress {
-    opacity: 0;
+    opacity:0;
     transform: translateY(-200px);
     transition: .3s;
     &.show {
         animation-name: fadeAddress;
-        animation-duration: 0.6s;
+        animation-duration: 0.7s;
         animation-fill-mode: forwards;
       }
 }

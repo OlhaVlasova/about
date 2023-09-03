@@ -116,7 +116,8 @@ a {
     transform: translateY(0);
     filter: blur(0); } }
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 body {
   background-color: #101616; }
@@ -145,8 +146,8 @@ h4 {
   font-weight: 600; }
 
 .wrap {
-  max-width: 1000px;
-  width: 100%;
+  max-width: 100%;
+  width: 1000px;
   margin: 0 auto;
   padding: 0 10px; }
 
@@ -198,7 +199,7 @@ h4 {
   transition: .3s; }
   .fadeAddress.show {
     animation-name: fadeAddress;
-    animation-duration: 0.6s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards; }
 
 /* horizontal scroll bar */
@@ -253,11 +254,11 @@ h4 {
     flex-direction: column;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -45px;
     width: 0;
     height: 100vh;
     padding: 90px 10px 10px 35px;
-    transition: all 0.1s; }
+    transition: all 0.5s; }
     .header #mobile-nav a {
       text-transform: uppercase;
       font-size: var(--nav-font-size);
@@ -318,13 +319,13 @@ h4 {
 #header.open .burger-icon > span:nth-child(3) {
   transform: translateY(0) rotate(-45deg); }
 #header.open #mobile-nav {
-  display: flex;
   left: 0;
-  width: 25vw; }
+  width: fit-content; }
   #header.open #mobile-nav a {
     animation-name: closeItemMobile;
     animation-duration: 0.8s;
-    animation-fill-mode: forwards; }
+    animation-fill-mode: forwards;
+    white-space: nowrap; }
 
 #lang {
   position: relative; }
@@ -415,11 +416,14 @@ h4 {
   flex-wrap: nowrap; }
   .education-title h3 {
     width: 50%; }
+  .education-title h3:last-child {
+    padding-left: 60px; }
 .education-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  margin-top: 30px; }
+  margin-top: 30px;
+  grid-column-gap: 60px; }
 .education--desc {
   font-size: 14px;
   font-weight: 400;
@@ -499,6 +503,8 @@ h4 {
     padding: 20px 50px;
     position: relative;
     margin: 15px 0; }
+    .portfolio-item:hover path {
+      stroke: #5CFFB1; }
     .portfolio-item--title {
       color: #5CFFB1;
       margin-bottom: 25px; }
@@ -513,8 +519,6 @@ h4 {
     .portfolio-item--desc {
       font-weight: 600;
       font-size: 14px; }
-    .portfolio-item:hover {
-      background: linear-gradient(rgba(9, 13, 13, 0.1), #090d0d, rgba(9, 13, 13, 0.1)); }
 
 .experience {
   text-align: center;
@@ -616,5 +620,83 @@ h4 {
     transition: all .5s; }
     #footer a:hover {
       color: #fff; }
+
+@media screen and (max-width: 1300px) {
+  .header #nav {
+    justify-content: space-around; }
+
+  .fadeXRight, .fadeXLeft {
+    -webkit-transform: translate(0, 60px);
+    -moz-transform: translate(0, 60px);
+    -o-transform: translate(0, 60px);
+    -ms-transform: translate(0, 60px);
+    transform: translate(0, 60px); }
+
+  .fadeXRight.show, .fadeXLeft.show {
+    opacity: 1;
+    transform: translate(0, 0); } }
+@media screen and (max-width: 1140px) {
+  :root {
+    --nav-font-size: 16px;
+    --font-size-h1: 72px;
+    --font-size-h2: 32px;
+    --font-size-h3: 30px;
+    --font-size-h4: 18px;
+    --skills-font-size: 24px;
+    --main-font-size: 17px; }
+
+  .home {
+    padding: 170px 0 20px; }
+
+  .wrap {
+    max-width: 90%; }
+
+  .mySkills {
+    padding: 150px 0 30px; }
+
+  .experience {
+    padding: 150px 0 45px; }
+
+  #footer {
+    padding: 60px 0 80px; }
+
+  #header #mobile-nav {
+    background: linear-gradient(rgba(92, 255, 177, 0.1), rgba(92, 255, 177, 0.5)), rgba(16, 22, 22, 0.95); }
+
+  #header.open #mobile-nav {
+    width: 30vw;
+    background: linear-gradient(rgba(92, 255, 177, 0.1), rgba(92, 255, 177, 0.5)), rgba(16, 22, 22, 0.95); }
+
+  .header #nav {
+    display: none; }
+
+  .burger-icon {
+    opacity: 1; } }
+@media screen and (max-width: 980px) {
+  :root {
+    --nav-font-size: 16px;
+    --font-size-h1: 64px;
+    --font-size-h2: 30px;
+    --font-size-h3: 28px;
+    --font-size-h4: 17px;
+    --skills-font-size: 22px;
+    --main-font-size: 15px; }
+
+  .home {
+    padding: 150px 0 20px; }
+    .home-about {
+      padding: 50px 0 80px; } }
+@media screen and (max-width: 768px) {
+  :root {
+    --nav-font-size: 16px;
+    --font-size-h1: 54px;
+    --font-size-h2: 28px;
+    --font-size-h3: 26px;
+    --font-size-h4: 17px;
+    --skills-font-size: 22px;
+    --main-font-size: 14px; }
+
+  #header.open #mobile-nav {
+    width: 45vw; } }
 
 /*# sourceMappingURL=main.css.map */

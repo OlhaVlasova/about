@@ -55,11 +55,11 @@
         flex-direction: column;
         position: absolute;
         top: 0;
-        left: 0;
+        left: -45px;
         width: 0;
         height: 100vh;
         padding: 90px 10px 10px 35px;
-        transition: all 0.1s;
+        transition: all 0.5s;
         a {
             text-transform: uppercase;
             font-size: var(--nav-font-size);
@@ -145,13 +145,13 @@
         }
     }
     #mobile-nav {
-        display: flex;
         left: 0;
-        width: 25vw;
+        width: fit-content;
         a {
             animation-name: closeItemMobile;
             animation-duration: 0.8s;
             animation-fill-mode: forwards;
+            white-space: nowrap;
         }
     }
     

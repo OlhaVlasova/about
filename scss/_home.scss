@@ -58,12 +58,16 @@
         h3 {
             width: 50%;
         }
+        h3:last-child {
+            padding-left: 60px;
+        }
     }
     &-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         margin-top: 30px;
+        grid-column-gap: 60px;
     }
     &--desc {
         font-size: 14px;
