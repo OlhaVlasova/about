@@ -99,6 +99,22 @@ a {
   100% {
     opacity: 0;
     margin-left: -350px; } }
+@keyframes fadeAddress {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+    filter: blur(6px); }
+  10% {
+    opacity: .5;
+    filter: blur(3px); }
+  70% {
+    opacity: 1;
+    transform: translateY(25px);
+    filter: blur(1px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0); } }
 html {
   scroll-behavior: smooth; }
 
@@ -175,6 +191,15 @@ h4 {
   .fadeXLeft.show {
     opacity: 1;
     transform: translateX(0); }
+
+.fadeAddress {
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: .3s; }
+  .fadeAddress.show {
+    animation-name: fadeAddress;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards; }
 
 /* horizontal scroll bar */
 .scrollBar {
@@ -486,7 +511,8 @@ h4 {
       align-items: center;
       justify-content: center; }
     .portfolio-item--desc {
-      font-weight: 600; }
+      font-weight: 600;
+      font-size: 14px; }
     .portfolio-item:hover {
       background: linear-gradient(rgba(9, 13, 13, 0.1), #090d0d, rgba(9, 13, 13, 0.1)); }
 

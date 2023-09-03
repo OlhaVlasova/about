@@ -37,5 +37,15 @@
         transform: translateX(0);
       }
 }
+.fadeAddress {
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: .3s;
+    &.show {
+        animation-name: fadeAddress;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
+      }
+}
 
   

@@ -104,7 +104,7 @@ $(document).ready(function() {
     function fadeAnimation() {
         const screenHeight = window.screen.height;
         const screenHeightFade = screenHeight*0.8;
-        const heightOutAnim = 30;
+        const heightOutAnim = 20;
 
         $(window).on("scroll", function() {
             fadeInAnimation();
@@ -127,6 +127,11 @@ $(document).ready(function() {
                     $(this).addClass("show");
                 }
             });
+            $(".fadeAddress" ).each(function( index ) {
+                if(window.scrollY >= $(this).offset().top-screenHeightFade) {
+                    $(this).addClass("show");
+                }
+            });
         }
         function fadeOutAnimation() {
             $(".fadeY" ).each(function( index ) {
@@ -141,6 +146,11 @@ $(document).ready(function() {
                 }
             });
             $(".fadeXLeft" ).each(function( index ) {
+                if((window.scrollY >= $(this).offset().top-heightOutAnim) || (window.scrollY < $(this).offset().top-screenHeightFade)) {
+                    $(this).removeClass("show");
+                }
+            });
+            $(".fadeAddress").each(function( index ) {
                 if((window.scrollY >= $(this).offset().top-heightOutAnim) || (window.scrollY < $(this).offset().top-screenHeightFade)) {
                     $(this).removeClass("show");
                 }
